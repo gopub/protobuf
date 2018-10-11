@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package gopub.protobuf;
+
+option go_package = "github.com/gopub/protobuf/base";
+
+
+message PhoneNumber {
+    string country_code = 1;
+    string number = 2;
+}
+
+message IDList {
+    repeated int64 ids = 1;
+}
+
+message OpenID {
+    string id = 1;
+    string provider = 2;
+}
+
