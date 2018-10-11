@@ -2,7 +2,8 @@
 
 DIR=$(dirname "$0")
 
-protoc  -I ${DIR}/include/  ${DIR}/include/base.proto --go_out=plugins=grpc:${DIR}/
-rm -r ${DIR}/base
-mv ${DIR}/github.com/gopub/protobuf/base ${DIR}
+protoc  -I ${DIR}/base/  ${DIR}/base/*.proto --go_out=plugins=grpc:${DIR}/
+rm -r ${DIR}/base/*.go
+mv ${DIR}/github.com/gopub/protobuf/base/*.go ${DIR}/base/
+rm -r ${DIR}/github.com
 
