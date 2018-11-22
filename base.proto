@@ -23,3 +23,8 @@ message ListQuery {
     int64 since_id = 1;
     int32 count = 2;
 }
+
+message StringField {
+    int64 id = 1;
+    string field = 2;
+}
