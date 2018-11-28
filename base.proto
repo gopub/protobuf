@@ -8,6 +8,10 @@ message VoidValue {
 
 }
 
+message BoolValue {
+    bool value = 1;
+}
+
 message Int64Value {
     int64 value = 1;
 }
