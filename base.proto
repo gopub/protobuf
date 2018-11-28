@@ -20,6 +20,10 @@ message Int64List {
     repeated int64 value = 1;
 }
 
+message StringValue {
+    string value = 1;
+}
+
 message StringList {
     repeated string value = 1;
 }
