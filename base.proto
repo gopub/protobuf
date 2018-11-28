@@ -4,27 +4,39 @@ package gopub.protobuf;
 
 option go_package = "github.com/gopub/protobuf/base";
 
+message VoidValue {
 
-message PhoneNumber {
-    string country_code = 1;
-    string number = 2;
 }
 
-message IDList {
-    repeated int64 ids = 1;
+message Int64Value {
+    int64 value = 1;
 }
 
-message OpenID {
-    string id = 1;
-    string provider = 2;
+message Int64List {
+    repeated int64 value = 1;
+}
+
+message StringList {
+    repeated string value = 1;
+}
+
+message Int64Pair {
+    int64 first = 1;
+    int64 second = 2;
+}
+
+message StringPair {
+    int64 first = 1;
+    int64 second = 2;
+}
+
+message Int64StringPair {
+    int64 first = 1;
+    string second = 2;
 }
 
 message ListQuery {
-    int64 since_id = 1;
-    int32 count = 2;
-}
-
-message StringField {
     int64 id = 1;
-    string field = 2;
+    int64 since_id = 2;
+    int32 count = 3;
 }
