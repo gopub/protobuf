@@ -48,3 +48,15 @@ message ListQuery {
     int64 since_id = 2;
     int32 count = 3;
 }
+
+message Area {
+    double min_lat = 1;
+    double max_lat = 2;
+    double min_lng = 3;
+    double max_lng = 4;
+}
+
+message Coordinate {
+    double longitude = 1;
+    double latitude = 2;
+}
