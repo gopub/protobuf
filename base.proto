@@ -34,8 +34,8 @@ message Int64Pair {
 }
 
 message StringPair {
-    int64 first = 1;
-    int64 second = 2;
+    string first = 1;
+    string second = 2;
 }
 
 message Int64StringPair {
