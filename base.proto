@@ -60,3 +60,8 @@ message Coordinate {
     double longitude = 1;
     double latitude = 2;
 }
+
+message PhoneNumber {
+    string country_code = 1;
+    string number = 2;
+}
