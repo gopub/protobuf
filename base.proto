@@ -62,6 +62,7 @@ message Coordinate {
 }
 
 message PhoneNumber {
-    string country_code = 1;
-    string number = 2;
+    int32 country_code = 1;
+    int64 national_number = 2;
+    string extension = 3;
 }
