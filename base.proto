@@ -16,7 +16,15 @@ message Int64Value {
     int64 value = 1;
 }
 
+message Float64Value {
+    int64 value = 1;
+}
+
 message Int64List {
+    repeated int64 value = 1;
+}
+
+message Float64List {
     repeated int64 value = 1;
 }
 
@@ -28,25 +36,9 @@ message StringList {
     repeated string value = 1;
 }
 
-message Int64Pair {
-    int64 first = 1;
-    int64 second = 2;
-}
-
-message StringPair {
-    string first = 1;
-    string second = 2;
-}
-
-message Int64StringPair {
-    int64 first = 1;
-    string second = 2;
-}
-
 message ListQuery {
-    int64 id = 1;
-    int64 since_id = 2;
-    int32 count = 3;
+    int64 since_id = 1;
+    int32 count = 2;
 }
 
 message Area {
